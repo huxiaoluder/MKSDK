@@ -1,0 +1,89 @@
+PODS:
+  - BoringSSL (10.0):
+    - BoringSSL/Implementation (= 10.0)
+    - BoringSSL/Interface (= 10.0)
+  - BoringSSL/Implementation (10.0):
+    - BoringSSL/Interface (= 10.0)
+  - BoringSSL/Interface (10.0)
+  - Expecta (1.0.6)
+  - "Expecta+Snapshots (3.1.1)":
+    - Expecta (~> 1.0)
+    - FBSnapshotTestCase/Core (~> 2.0)
+    - Specta (~> 1.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - gRPC (1.10.0):
+    - gRPC-RxLibrary (= 1.10.0)
+    - gRPC/Main (= 1.10.0)
+  - gRPC-Core (1.10.0):
+    - gRPC-Core/Implementation (= 1.10.0)
+    - gRPC-Core/Interface (= 1.10.0)
+  - gRPC-Core/Implementation (1.10.0):
+    - BoringSSL (~> 10.0)
+    - gRPC-Core/Interface (= 1.10.0)
+    - nanopb (~> 0.3)
+  - gRPC-Core/Interface (1.10.0)
+  - gRPC-ProtoRPC (1.10.0):
+    - gRPC (= 1.10.0)
+    - gRPC-RxLibrary (= 1.10.0)
+    - Protobuf (~> 3.0)
+  - gRPC-RxLibrary (1.10.0)
+  - gRPC/Main (1.10.0):
+    - gRPC-Core (= 1.10.0)
+    - gRPC-RxLibrary (= 1.10.0)
+  - MKSDK (0.1.0):
+    - gRPC-ProtoRPC
+    - Protobuf
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+  - Protobuf (3.5.0)
+  - Specta (1.0.7)
+
+DEPENDENCIES:
+  - Expecta
+  - "Expecta+Snapshots"
+  - FBSnapshotTestCase
+  - MKSDK (from `../`)
+  - Specta
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - BoringSSL
+    - Expecta
+    - "Expecta+Snapshots"
+    - FBSnapshotTestCase
+    - gRPC
+    - gRPC-Core
+    - gRPC-ProtoRPC
+    - gRPC-RxLibrary
+    - nanopb
+    - Protobuf
+    - Specta
+
+EXTERNAL SOURCES:
+  MKSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BoringSSL: 32764dbaf5f5888cf51fbaa172a010126b41bcd4
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
+  "Expecta+Snapshots": dcff217eef506dabd6dfdc7864ea2da321fafbb8
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  gRPC: f54f0e6d603052b4562447da442ce2ff30bcdacc
+  gRPC-Core: a030b1678ded49c88ec5ba7c90ee8ee5f47ec6e1
+  gRPC-ProtoRPC: 22712b23eb1bda656a59715fa5c1da0ea1493ea4
+  gRPC-RxLibrary: a41a4652d220f230ba1c0491a94ce2ee04c6180a
+  MKSDK: ee154198c0395248b75639f3bdd63f6e347e5e58
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
+  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
+
+PODFILE CHECKSUM: 4b64782425e08da14615c2f5af65dad7eeb189ad
+
+COCOAPODS: 1.5.0

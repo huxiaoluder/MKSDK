@@ -7,6 +7,7 @@
 //
 
 #import "MKViewController.h"
+#import <MKSDK/MKSDK.h>
 
 @interface MKViewController ()
 
@@ -17,7 +18,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [NetworkTool userLoginWithUserName:@"86-18801381344" password:@"123456" handler:^(UserLoginRpcResponse * _Nullable response, NSString * _Nullable error) {
+        if (!error) {
+            
+        } else {
+            
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning
