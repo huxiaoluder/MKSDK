@@ -1,0 +1,14 @@
+use_frameworks!
+
+target 'MKSDK_Example' do
+  pod 'MKSDK', :path => '../'
+
+  target 'MKSDK_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+    pod 'Expecta'
+    pod 'FBSnapshotTestCase'
+    pod 'Expecta+Snapshots'
+  end
+end
