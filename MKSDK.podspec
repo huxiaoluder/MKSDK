@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MKSDK'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of MKSDK.'
+  s.summary          = 'Network SDK Of MKTECH.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -37,6 +37,7 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.vendored_frameworks = 'MKSDK/*.{framework}'
+  s.dependency 'Protobuf'
+  s.dependency 'gRPC-ProtoRPC'
 end
